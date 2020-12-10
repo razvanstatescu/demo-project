@@ -1,0 +1,7 @@
+<div *ngIf="$cameras | async as cameras">
+  <p class="text-gray-800 font-semibold mb-4 mt-8 md:mt-0">Select a camera:</p>
+  <ul>
+    <li (click)="changeCamera(camera)" *ngFor="let camera of cameras"
+        class="bg-gray-800 px-4 py-2 text-white my-4 hover:bg-gray-700 cursor-pointer rounded">{{camera.name}}</li>
+  </ul>
+</div>

@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+#camera-container {
+  > div {
+    width: 100% !important;
+  }
+
+  img {
+    max-width: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #camera-container > div {
+    height: calc(100vh - 140px) !important;
+  }
+}
